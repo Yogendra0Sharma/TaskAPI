@@ -1,0 +1,16 @@
+{% load staticfiles %}
+<html ng-app>
+	<head>
+		<title>Task List</title>
+		<script src="{% static 'angular.min.js'%}"></script>
+    	<script src="{% static 'Task.js'%}"></script>
+	</head>
+
+	<body>
+		<div ng-controller="Task">
+			<p>Task Id {{task.id}}</p>
+			<p>Task Name: {{task.task_name}}</p>
+            <p>Task Desc: {{task.task_desc}}</p>
+		</div>
+	</body>
+</html>
